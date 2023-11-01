@@ -1,0 +1,123 @@
+/* Import any external libraries or fonts here */
+
+/* Define global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+
+/* Style the header */
+header {
+  background: linear-gradient(to right, gold, #f0f0f0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left-side-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-side-nav {
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 10px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: gold;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+          border-color: gold;
+        }
+      }
+    }
+
+    button {
+      background: gold;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Style the main section */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .registration-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+  }
+
+  h2 {
+    color: gold;
+  }
+
+  h4 {
+    color: gold;
+  }
+
+  p {
+    color: #333;
+  }
+
+  form {
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="password"]:required {
+      border-color: red; /* Example for a required field */
+    }
+
+    button {
+      background: gold;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+
+  span {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Media queries for responsiveness can be added here */
