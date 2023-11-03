@@ -5,5 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Page</a>
+            <a href="#">Create New Course</a>
+            <a href="#">Add School Request</a>
+            <a href="#">Add School Email</a>
+            <a href="#">Blog</a>
+            <a href="#">About Us</a>
+            <a href="#">Login </a>
+          </div>
+        </div>
+
+        <div class="logo">
+          <h1>ACAREREVIEW</h1>
+        </div>
+        <div>
+          <ul class="right-side-nav">
+            <li><a href="/acare-lms/index.html">Page</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/acare-lms/login.html">Login</a></li>
+            <li><a href="/acare-lms/signup.html">Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="login_header">
+      <h4>welcome back!</h4>
+      <h4>Login to continue</h4>
+      <figure>
+       <img src="/acare-lms\asset\images\logo.png" alt="login_icon">
+    </figure>
+  </div>
+    <form action="" method="post" class="login_form">
+      <label for="Email">Username or Email:</label><br />
+          <input type="Email" id="email" name="email" /><br />
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" /> <br />
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="remember me">Remember me</label>
+          <label for="password">Forgot password?</label><br />
+          <input type="button" id="button" value="Login" required /><br />
+          <p>If you dont have an account, <a href="">Sign up</a></p>
+    </form>
+    </main>
+  </body>
 </html>
